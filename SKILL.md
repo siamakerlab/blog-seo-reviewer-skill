@@ -7,6 +7,8 @@ description: Lightweight blog post SEO review and improvement workflow grounded 
 
 Use this skill to improve blog posts with source-grounded SEO guidance. Treat search engines' official documentation and web standards as the baseline, and treat SEO plugin scores, third-party checklists, and industry heuristics as optional implementation aids only when they do not conflict with official guidance.
 
+This skill is advisory. It helps review, explain, and suggest improvements; it does not override the user's instructions, repository guidance, AGENTS.md, CLAUDE.md, CMS/editorial rules, brand style guides, legal requirements, or other project management documents. If this skill conflicts with user-provided or project-provided instructions, follow the user's/project's instructions and frame the SEO point as an optional recommendation or tradeoff.
+
 ## Source Policy
 
 Rely on these source classes, in this order:
@@ -33,15 +35,16 @@ Read only the relevant reference file:
 ## Workflow
 
 1. Identify the post goal, audience, search intent, and primary topic. If the user already provides a target query or focus keyword, treat it as a working hypothesis, not proof of demand.
-2. Inspect the article body and metadata. Check title, meta description, slug/URL, headings, first paragraph, internal links, external citations, images, alt text, captions, and structured data.
-3. Separate findings into:
+2. Check whether the user or repository provides management documents, editorial rules, CMS conventions, brand style, or project-specific SEO requirements. Treat those as binding context.
+3. Inspect the article body and metadata. Check title, meta description, slug/URL, headings, first paragraph, internal links, external citations, images, alt text, captions, and structured data.
+4. Separate findings into:
    - `Confirmed`: directly visible in the provided content, HTML, metadata, or official tool output.
    - `Needs official verification`: depends on current policy/tool behavior or a referenced official page not yet checked.
    - `Heuristic`: common editorial or SEO practice, not an official rule.
-4. Prefer people-first improvements: make the post clearer, more complete for its intent, easier to scan, better sourced, and more useful. Do not add keywords just to satisfy density.
-5. Preserve the author's voice and factual scope. Do not invent experience, credentials, dates, data, traffic numbers, rankings, or source claims.
-6. Recommend concrete edits: replacement title/meta text, heading changes, paragraph improvements, image alt/caption suggestions, internal link opportunities, or schema changes.
-7. If asked to edit files, make the smallest content changes needed and keep CMS-specific requirements separate from official SEO requirements.
+5. Prefer people-first improvements: make the post clearer, more complete for its intent, easier to scan, better sourced, and more useful. Do not add keywords just to satisfy density.
+6. Preserve the author's voice and factual scope. Do not invent experience, credentials, dates, data, traffic numbers, rankings, or source claims.
+7. Recommend concrete edits: replacement title/meta text, heading changes, paragraph improvements, image alt/caption suggestions, internal link opportunities, or schema changes.
+8. If asked to edit files, make the smallest content changes needed and keep CMS-specific requirements separate from official SEO requirements.
 
 ## Output Contract
 
@@ -67,3 +70,4 @@ For direct content improvement, return the revised content plus a short note of 
 - Do not mark up content that is not visible to users.
 - Do not treat decorative images as needing keyword-rich alt text.
 - Do not cite unofficial SEO blogs as proof when official sources are available.
+- Do not override user instructions, project management documents, repository guidance, or established editorial requirements. When there is a conflict, state the conflict briefly and keep the SEO guidance optional.

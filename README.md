@@ -4,12 +4,15 @@ A lightweight Codex skill for reviewing and improving blog SEO by referring to o
 
 This skill is intentionally conservative. It does not provide a full SEO suite, keyword research system, ranking predictor, traffic estimator, or automated audit platform. Its purpose is much narrower: help Codex check blog/article SEO decisions against reliable baseline references such as search engine documentation, official search tools, Schema.org, web.dev, MDN, WHATWG HTML, and W3C accessibility guidance.
 
+The skill is advisory by design. It reviews and suggests; it should not override a user's instructions, repository guidance, AGENTS.md, CLAUDE.md, CMS/editorial rules, brand style guides, legal requirements, or other project management documents. If there is a conflict, the user's or project's own instructions take priority, and the SEO point should be presented only as an optional recommendation or tradeoff.
+
 ## What This Skill Is
 
 - A compact reference workflow for blog and article SEO.
 - A source-grounded checklist for titles, meta descriptions, headings, links, images, alt text, structured data, crawl/index basics, snippets, Core Web Vitals, and HTML semantics.
 - A conservative guardrail against common unsupported SEO claims, keyword-density rules, plugin-score chasing, and ranking guarantees.
 - A reusable skill that is not tied to one blog platform, CMS, theme, or plugin.
+- An advisory reference layer that respects user and project-specific management documents.
 
 ## What This Skill Is Not
 
@@ -17,6 +20,7 @@ This skill is intentionally conservative. It does not provide a full SEO suite, 
 - It is not a guarantee of ranking, indexing, traffic, click-through rate, rich results, Discover visibility, or AI search visibility.
 - It is not a replacement for Google Search Console, Bing Webmaster Tools, PageSpeed Insights, Lighthouse, or the Rich Results Test.
 - It is not a third-party SEO framework with aggressive scoring rules or proprietary ranking formulas.
+- It is not an instruction hierarchy override for user-provided or project-provided rules.
 
 ## Source Position
 
@@ -39,6 +43,7 @@ The intended behavior is:
 - avoid keyword stuffing and artificial density targets;
 - keep recommendations accurate, specific, and verifiable;
 - separate confirmed issues from assumptions and optional heuristics;
+- respect the user's management documents and existing editorial requirements;
 - avoid inventing claims, credentials, dates, rankings, or performance data.
 
 ## Repository Structure
