@@ -13,6 +13,7 @@ The skill is advisory by design. It reviews and suggests; it should not override
 - A conservative guardrail against common unsupported SEO claims, keyword-density rules, plugin-score chasing, and ranking guarantees.
 - A reusable skill that is not tied to one blog platform, CMS, theme, or plugin.
 - An advisory reference layer that respects user and project-specific management documents.
+- An itemized before/after scorecard for reviews and edits, used only as a diagnostic checklist.
 
 ## What This Skill Is Not
 
@@ -21,6 +22,7 @@ The skill is advisory by design. It reviews and suggests; it should not override
 - It is not a replacement for Google Search Console, Bing Webmaster Tools, PageSpeed Insights, Lighthouse, or the Rich Results Test.
 - It is not a third-party SEO framework with aggressive scoring rules or proprietary ranking formulas.
 - It is not an instruction hierarchy override for user-provided or project-provided rules.
+- Its scores are not ranking predictions; they only summarize visible evidence against the skill's checklist.
 
 ## Source Position
 
@@ -43,6 +45,7 @@ The intended behavior is:
 - avoid keyword stuffing and artificial density targets;
 - keep recommendations accurate, specific, and verifiable;
 - separate confirmed issues from assumptions and optional heuristics;
+- show current and post-edit scores when reviewing or modifying content;
 - respect the user's management documents and existing editorial requirements;
 - avoid inventing claims, credentials, dates, rankings, or performance data.
 

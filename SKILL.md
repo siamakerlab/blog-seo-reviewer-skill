@@ -44,7 +44,55 @@ Read only the relevant reference file:
 5. Prefer people-first improvements: make the post clearer, more complete for its intent, easier to scan, better sourced, and more useful. Do not add keywords just to satisfy density.
 6. Preserve the author's voice and factual scope. Do not invent experience, credentials, dates, data, traffic numbers, rankings, or source claims.
 7. Recommend concrete edits: replacement title/meta text, heading changes, paragraph improvements, image alt/caption suggestions, internal link opportunities, or schema changes.
-8. If asked to edit files, make the smallest content changes needed and keep CMS-specific requirements separate from official SEO requirements.
+8. Produce an itemized SEO scorecard for the current state before edits or recommendations.
+9. If asked to edit files, make the smallest content changes needed and keep CMS-specific requirements separate from official SEO requirements.
+10. After edits, produce a second itemized scorecard for the changed state. Mark unverified items as `Needs verification` instead of assigning certainty.
+
+## Scorecard
+
+Use scoring to make review results easier to compare. Scores are diagnostic checklists, not ranking predictions.
+
+Score each applicable item from `0` to `5`:
+
+- `0`: absent, misleading, blocked, or contradicts official/project guidance
+- `1`: present but weak, incomplete, or hard to verify
+- `2`: partially useful but missing important context or implementation details
+- `3`: acceptable baseline with clear improvement opportunities
+- `4`: strong and mostly aligned with official/project guidance
+- `5`: complete, clear, verifiable, and well aligned with official/project guidance
+- `N/A`: not applicable to this post or not inspectable from the provided evidence
+
+Default scorecard items:
+
+```text
+People-first usefulness:
+Search intent fit:
+Title / SEO title:
+Meta description / snippet support:
+URL / slug / canonical:
+Heading structure:
+Keyword/topic alignment:
+Internal links:
+External citations:
+Images, alt text, and captions:
+Structured data:
+Crawl/index signals:
+Performance / Core Web Vitals evidence:
+Accessibility-relevant HTML:
+Project guidance compliance:
+```
+
+Include a total as `earned / possible`, excluding `N/A`. When a score depends on official tools that were not run, score only visible evidence and add `Needs verification`.
+
+For reviews, show `Current Scorecard`. For edits, show both:
+
+```text
+Before Scorecard:
+After Scorecard:
+Score Change:
+```
+
+Do not use the total score as a promise of search visibility, indexing, traffic, CTR, rich results, Discover, or AI search inclusion.
 
 ## Output Contract
 
@@ -53,13 +101,21 @@ For a review, return:
 ```text
 Scope:
 Official sources used or needing verification:
+Current Scorecard:
 Confirmed issues:
 Recommended edits:
 Heuristics / optional improvements:
 Do not do:
 ```
 
-For direct content improvement, return the revised content plus a short note of official-source-sensitive assumptions that should be verified.
+For direct content improvement, return the revised content plus:
+
+```text
+Before Scorecard:
+After Scorecard:
+Score Change:
+Official-source-sensitive assumptions to verify:
+```
 
 ## Guardrails
 
