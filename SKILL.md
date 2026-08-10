@@ -1,9 +1,9 @@
 ---
-name: official-blog-seo
-description: Lightweight blog post SEO review and improvement workflow grounded only in official or high-authority sources. Use when Codex needs to assess or improve blog/article SEO, titles, meta descriptions, headings, image alt text, internal/external links, structured data, crawl/index basics, Core Web Vitals, accessibility-relevant HTML, or search-result presentation without relying on third-party SEO folklore, plugin scores, keyword-density rules, or ranking guarantees.
+name: blog-seo-reviewer
+description: Lightweight blog post SEO reviewer grounded in official or high-authority sources. Use when Codex needs to assess or improve blog/article SEO, titles, meta descriptions, headings, image alt text, internal/external links, structured data, crawl/index basics, Core Web Vitals, accessibility-relevant HTML, or search-result presentation without relying on third-party SEO folklore, plugin scores, keyword-density rules, or ranking guarantees.
 ---
 
-# Official Blog SEO
+# Blog SEO Reviewer
 
 Use this skill to improve blog posts with source-grounded SEO guidance. Treat search engines' official documentation and web standards as the baseline, and treat SEO plugin scores, third-party checklists, and industry heuristics as optional implementation aids only when they do not conflict with official guidance.
 

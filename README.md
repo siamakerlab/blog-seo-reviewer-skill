@@ -1,4 +1,4 @@
-# Official Blog SEO Skill
+# Blog SEO Reviewer Skill
 
 A lightweight Codex skill for reviewing and improving blog SEO by referring to official and high-authority documentation.
 
@@ -52,7 +52,7 @@ The intended behavior is:
 ## Repository Structure
 
 ```text
-official-blog-seo-skill/
+blog-seo-reviewer/
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
@@ -71,13 +71,13 @@ Install it as a Codex skill from this GitHub repository, or place the folder und
 The skill name is:
 
 ```text
-official-blog-seo
+blog-seo-reviewer
 ```
 
 Example prompt:
 
 ```text
-Use $official-blog-seo to review this blog post against official SEO, structured data, performance, and accessibility guidance.
+Use $blog-seo-reviewer to review this blog post against source-grounded SEO, structured data, performance, and accessibility guidance.
 ```
 
 ## License

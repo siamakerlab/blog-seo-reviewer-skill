@@ -1,4 +1,4 @@
 interface:
-  display_name: "Official Blog SEO"
-  short_description: "Use official search and web standards to review blog SEO."
-  default_prompt: "Use $official-blog-seo to review this blog post against official SEO, structured data, performance, and accessibility guidance."
+  display_name: "Blog SEO Reviewer"
+  short_description: "Review blog SEO using official and high-authority sources."
+  default_prompt: "Use $blog-seo-reviewer to review this blog post against source-grounded SEO, structured data, performance, and accessibility guidance."
