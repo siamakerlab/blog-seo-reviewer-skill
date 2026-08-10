@@ -13,6 +13,21 @@ Use this reference for crawl/index, search-result display, and search-engine pol
   - Image SEO and title/snippet documentation
 - Bing Webmaster Guidelines and Bing Webmaster Tools documentation.
 
+## Official URLs
+
+- Google Search documentation: https://developers.google.com/search/docs
+- Google SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+- Google Search Essentials: https://developers.google.com/search/docs/essentials
+- Google spam policies: https://developers.google.com/search/docs/essentials/spam-policies
+- Google robots.txt guide: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+- Google noindex guide: https://developers.google.com/search/docs/crawling-indexing/block-indexing
+- Google canonical guide: https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+- Google sitemaps guide: https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview
+- Google title links: https://developers.google.com/search/docs/appearance/title-link
+- Google snippets: https://developers.google.com/search/docs/appearance/snippet
+- Google image SEO: https://developers.google.com/search/docs/appearance/google-images
+- Bing Webmaster Guidelines: https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a
+
 ## Crawl and Index Basics
 
 - A page generally needs to be discoverable, crawlable, indexable, and useful to appear in search results.

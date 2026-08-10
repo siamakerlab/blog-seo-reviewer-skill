@@ -9,6 +9,15 @@ Use this reference for performance and Core Web Vitals checks.
 - Lighthouse documentation.
 - Google Search Console Core Web Vitals report.
 
+## Official URLs
+
+- web.dev Web Vitals: https://web.dev/articles/vitals
+- web.dev Core Web Vitals collection: https://web.dev/explore/learn-core-web-vitals
+- web.dev Core Web Vitals thresholds: https://web.dev/articles/defining-core-web-vitals-thresholds
+- PageSpeed Insights: https://pagespeed.web.dev/
+- Lighthouse documentation: https://developer.chrome.com/docs/lighthouse
+- Google Search Console Core Web Vitals report: https://support.google.com/webmasters/answer/9205520
+
 ## Core Web Vitals
 
 Use current web.dev definitions and thresholds. As of recent guidance, the primary Core Web Vitals are:

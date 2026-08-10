@@ -18,7 +18,7 @@ Rely on these source classes, in this order:
 3. **Web standards and platform references**: Schema.org, WHATWG HTML, W3C WAI/WCAG, MDN, web.dev.
 4. **CMS or plugin documentation**: Use only for implementation details inside that CMS/plugin. Do not treat plugin scores as search-engine rules.
 
-Do not claim that a practice is "official SEO" unless it is supported by one of the source classes above. When a claim is common SEO practice but not official, label it as a heuristic.
+Do not claim that a practice is "official search guidance" unless it is supported by search engine official documentation or official search tools. Treat web standards and platform references as high-authority implementation guidance, not search-engine rules. When a claim is common SEO practice but not official, label it as a heuristic.
 
 When current facts matter, verify against the official page before making a firm claim. This especially applies to rich result eligibility, structured data deprecations, Core Web Vitals metrics, spam policies, AI search features, and search tool behavior.
 
@@ -43,9 +43,9 @@ Read only the relevant reference file:
    - `Heuristic`: common editorial or SEO practice, not an official rule.
 5. Prefer people-first improvements: make the post clearer, more complete for its intent, easier to scan, better sourced, and more useful. Do not add keywords just to satisfy density.
 6. Preserve the author's voice and factual scope. Do not invent experience, credentials, dates, data, traffic numbers, rankings, or source claims.
-7. Recommend concrete edits: replacement title/meta text, heading changes, paragraph improvements, image alt/caption suggestions, internal link opportunities, or schema changes.
-8. Produce an itemized SEO scorecard for the current state before edits or recommendations.
-9. If asked to edit files, make the smallest content changes needed and keep CMS-specific requirements separate from official SEO requirements.
+7. Produce an itemized SEO scorecard for the current state before edits or recommendations.
+8. Recommend concrete edits: replacement title/meta text, heading changes, paragraph improvements, image alt/caption suggestions, internal link opportunities, or schema changes.
+9. If asked to edit files, make the smallest content changes needed and keep CMS-specific requirements separate from source-grounded SEO guidance.
 10. After edits, produce a second itemized scorecard for the changed state. Mark unverified items as `Needs verification` instead of assigning certainty.
 
 ## Scorecard
@@ -116,6 +116,8 @@ After Scorecard:
 Score Change:
 Official-source-sensitive assumptions to verify:
 ```
+
+If editing files directly, summarize the changed content instead of pasting the full article unless the user asks for the full revised text.
 
 ## Guardrails
 

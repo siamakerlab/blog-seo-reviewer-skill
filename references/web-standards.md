@@ -9,6 +9,15 @@ Use this reference for HTML semantics, accessibility-adjacent SEO, image alt tex
 - W3C WAI/WCAG for accessibility guidance.
 - Schema.org for vocabulary definitions.
 
+## Official URLs
+
+- WHATWG HTML: https://html.spec.whatwg.org/
+- MDN HTML elements reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+- MDN image alt text guidance: https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt
+- W3C WAI images tutorial: https://www.w3.org/WAI/tutorials/images/
+- WCAG 2 overview: https://www.w3.org/WAI/standards-guidelines/wcag/
+- Schema.org: https://schema.org/
+
 ## HTML Semantics
 
 - Use headings to represent document structure.

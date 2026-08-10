@@ -87,6 +87,12 @@ Install siamakerlab/blog-seo-reviewer-skill from GitHub.
 You can also phrase it like this:
 
 ```text
+Install the Codex/Claude skill from https://github.com/siamakerlab/blog-seo-reviewer-skill.git.
+```
+
+SSH also works if your environment has GitHub SSH access:
+
+```text
 Install the Codex/Claude skill from git@github.com:siamakerlab/blog-seo-reviewer-skill.git.
 ```
 
@@ -106,7 +112,7 @@ After installation, use:
 Use $blog-seo-reviewer to review this blog post.
 ```
 
-Manual installation is also possible by placing this repository's skill folder under your Codex skills directory, for example:
+Manual installation is also possible by cloning or copying this repository's contents into a folder named `blog-seo-reviewer` under your Codex skills directory:
 
 ```text
 ~/.codex/skills/blog-seo-reviewer/
@@ -126,7 +132,7 @@ Then use:
 Use the blog-seo-reviewer skill to review this blog post.
 ```
 
-If you install manually, place the skill folder in the skills directory used by your Claude environment. The exact directory may depend on your Claude setup, so prefer the natural-language install request when available.
+If you install manually, place the repository contents in a folder named `blog-seo-reviewer` inside the skills directory used by your Claude environment. The exact directory may depend on your Claude setup, so prefer the natural-language install request when available.
 
 ## Removal
 

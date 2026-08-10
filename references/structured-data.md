@@ -8,6 +8,18 @@ Use this reference for blog/article structured data grounded in official sources
 - Rich Results Test.
 - Schema.org vocabulary.
 
+## Official URLs
+
+- Google structured data introduction: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+- Google general structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+- Google structured data gallery: https://developers.google.com/search/docs/appearance/structured-data/search-gallery
+- Google Article structured data: https://developers.google.com/search/docs/appearance/structured-data/article
+- Google Breadcrumb structured data: https://developers.google.com/search/docs/appearance/structured-data/breadcrumb
+- Google Rich Results Test: https://search.google.com/test/rich-results
+- Schema.org Article: https://schema.org/Article
+- Schema.org BlogPosting: https://schema.org/BlogPosting
+- Schema.org BreadcrumbList: https://schema.org/BreadcrumbList
+
 ## Baselines
 
 - JSON-LD is generally the preferred implementation format for Google.
