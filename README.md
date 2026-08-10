@@ -1,49 +1,64 @@
 # Blog SEO Reviewer Skill
 
-A lightweight Codex skill for reviewing and improving blog SEO with conservative, source-grounded guidance.
+A very lightweight skill for reviewing blog posts from a conservative SEO perspective.
 
-This skill helps Codex review blog posts against reliable baseline references such as search engine documentation, official search tools, Schema.org, web.dev, MDN, WHATWG HTML, and W3C accessibility guidance. It is intentionally conservative and designed to avoid overstating what SEO guidance can prove.
+This skill is not designed to be a feature-rich SEO automation suite. Its main purpose is to help an agent review blog content by checking reliable baseline guidance from official or high-authority sources, then present cautious, source-grounded suggestions.
 
-The skill is advisory by design. It reviews and suggests; it should not override a user's instructions, repository guidance, AGENTS.md, CLAUDE.md, CMS/editorial rules, brand style guides, legal requirements, or other project management documents. If there is a conflict, the user's or project's own instructions take priority, and the SEO point should be presented only as an optional recommendation or tradeoff.
+In short: it is a small review aid for blog posts, not a ranking tool.
 
-## Quick Start
+## Purpose
 
-Use the skill by name:
+Blog SEO Reviewer exists to help with practical blog post reviews:
 
-```text
-Use $blog-seo-reviewer to review this blog post against source-grounded SEO, structured data, performance, and accessibility guidance.
-```
+- title and SEO title clarity;
+- meta description quality;
+- heading structure;
+- topic and focus keyword alignment;
+- internal and external links;
+- image alt text and captions;
+- structured data basics;
+- crawl/index signals visible from the page;
+- Core Web Vitals or performance evidence when tool output is available;
+- accessibility-relevant HTML checks.
 
-Typical uses:
+The skill intentionally stays conservative. It prefers official search engine documentation, official search tools, and web standards over third-party SEO folklore or aggressive scoring formulas.
 
-- review a draft blog post before publishing;
-- check an already published article's title, meta description, headings, links, images, and structured data;
-- compare before/after SEO checklist scores after edits;
-- separate official guidance from optional SEO heuristics.
+## Source Position
+
+The skill is written around these source classes:
+
+1. Search engine official guidance, especially Google Search Central and Bing Webmaster Guidelines.
+2. Official search tools such as Google Search Console, Rich Results Test, PageSpeed Insights, Lighthouse, and Bing Webmaster Tools.
+3. Web standards and platform references such as Schema.org, WHATWG HTML, W3C WAI/WCAG, MDN, and web.dev.
+4. CMS or plugin documentation only for implementation details, not as search-engine rules.
+
+When current policy or tool behavior matters, the agent should verify against the current official page before making firm claims.
 
 ## What This Skill Is
 
-- A compact review workflow for blog and article SEO.
-- A source-grounded checklist for titles, meta descriptions, headings, links, images, alt text, structured data, crawl/index basics, snippets, Core Web Vitals, and HTML semantics.
-- A conservative guardrail against unsupported SEO claims, keyword-density rules, plugin-score chasing, and ranking guarantees.
-- A reusable skill that is not tied to one blog platform, CMS, theme, or plugin.
-- An advisory reference layer that respects user and project-specific management documents.
-- An itemized before/after scorecard for reviews and edits, used only as a diagnostic checklist.
+- A compact blog SEO review workflow.
+- A source-grounded checklist for common blog post SEO review tasks.
+- A conservative reference layer for agents reviewing blog content.
+- A small scorecard system for before/after review summaries.
+- A reusable skill that is not tied to one specific blog platform, CMS, theme, or SEO plugin.
 
 ## What This Skill Is Not
 
-- It is not an official product from Google, Bing, OpenAI, Schema.org, W3C, WHATWG, MDN, or web.dev.
-- It is not a guarantee of ranking, indexing, traffic, click-through rate, rich results, Discover visibility, or AI search visibility.
-- It is not a replacement for Google Search Console, Bing Webmaster Tools, PageSpeed Insights, Lighthouse, or the Rich Results Test.
-- It is not a third-party SEO framework with aggressive scoring rules or proprietary ranking formulas.
-- It is not an instruction hierarchy override for user-provided or project-provided rules.
-- Its scores are not ranking predictions; they only summarize visible evidence against the skill's checklist.
+- It is not an official product from Google, Bing, OpenAI, Anthropic, Schema.org, W3C, WHATWG, MDN, or web.dev.
+- It is not a full SEO suite.
+- It is not a keyword research tool.
+- It is not a ranking predictor.
+- It is not a traffic or CTR estimator.
+- It does not guarantee indexing, ranking, rich results, Discover visibility, or AI search visibility.
+- It should not override user instructions, repository guidance, editorial rules, brand style guides, CMS rules, legal requirements, or project management documents.
 
 ## Scorecard
 
-Reviews include itemized scores from `0` to `5`, with `N/A` for items that are not applicable or not inspectable from the provided evidence.
+Reviews include itemized scores from `0` to `5`, with `N/A` for items that are not applicable or not inspectable from the available evidence.
 
-The default scorecard covers:
+The scorecard is only a diagnostic checklist. It does not predict rankings.
+
+Default review areas:
 
 - people-first usefulness;
 - search intent fit;
@@ -61,32 +76,73 @@ The default scorecard covers:
 - accessibility-relevant HTML;
 - project guidance compliance.
 
-The total score excludes `N/A` items. Scores are diagnostic summaries only; they do not predict ranking, indexing, traffic, CTR, rich results, Discover, or AI search inclusion.
+## Quick Install
 
-## Source Position
+The easiest way is to ask your coding agent in plain language:
 
-The skill is written to prefer these source classes:
+```text
+Install siamakerlab/blog-seo-reviewer-skill from GitHub.
+```
 
-1. Search engine official guidance, especially Google Search Central and Bing Webmaster Guidelines.
-2. Official search tools such as Google Search Console, Rich Results Test, PageSpeed Insights, Lighthouse, and Bing Webmaster Tools.
-3. Web standards and platform references such as Schema.org, WHATWG HTML, W3C WAI/WCAG, MDN, and web.dev.
-4. CMS or plugin documentation only for implementation details, not as search-engine rules.
+You can also phrase it like this:
 
-When current facts matter, the skill instructs Codex to verify against official pages before making firm claims. This is especially important for structured data eligibility, rich results, spam policies, Core Web Vitals metrics, and search feature behavior.
+```text
+Install the Codex/Claude skill from git@github.com:siamakerlab/blog-seo-reviewer-skill.git.
+```
 
-## Design Philosophy
+If your agent supports skill installation from GitHub, it should fetch the repository and place the skill in the correct local skills directory.
 
-This skill exists as reference material, not as a flashy automation layer. Every recommendation should be traceable to official or high-authority guidance, or clearly labeled as a heuristic when it is not an official rule.
+## Codex Installation
 
-The intended behavior is:
+Ask Codex:
 
-- prefer people-first content improvements;
-- avoid keyword stuffing and artificial density targets;
-- keep recommendations accurate, specific, and verifiable;
-- separate confirmed issues from assumptions and optional heuristics;
-- show current and post-edit scores when reviewing or modifying content;
-- respect the user's management documents and existing editorial requirements;
-- avoid inventing claims, credentials, dates, rankings, or performance data.
+```text
+Install siamakerlab/blog-seo-reviewer-skill from GitHub.
+```
+
+After installation, use:
+
+```text
+Use $blog-seo-reviewer to review this blog post.
+```
+
+Manual installation is also possible by placing this repository's skill folder under your Codex skills directory, for example:
+
+```text
+~/.codex/skills/blog-seo-reviewer/
+```
+
+## Claude Installation
+
+Ask Claude Code or another Claude-based coding agent that supports skills:
+
+```text
+Install siamakerlab/blog-seo-reviewer-skill from GitHub.
+```
+
+Then use:
+
+```text
+Use the blog-seo-reviewer skill to review this blog post.
+```
+
+If you install manually, place the skill folder in the skills directory used by your Claude environment. The exact directory may depend on your Claude setup, so prefer the natural-language install request when available.
+
+## Removal
+
+The simplest removal request is:
+
+```text
+Remove the blog-seo-reviewer skill.
+```
+
+For Codex manual removal, delete the local skill directory:
+
+```text
+~/.codex/skills/blog-seo-reviewer/
+```
+
+For Claude manual removal, delete the `blog-seo-reviewer` skill folder from the skills directory used by your Claude environment.
 
 ## Repository Structure
 
@@ -101,22 +157,6 @@ blog-seo-reviewer-skill/
     ├── search-official.md
     ├── structured-data.md
     └── web-standards.md
-```
-
-## Installation
-
-Install it as a Codex skill from this GitHub repository:
-
-```text
-git@github.com:siamakerlab/blog-seo-reviewer-skill.git
-```
-
-Or place the skill folder under your local Codex skills directory.
-
-The skill name is:
-
-```text
-blog-seo-reviewer
 ```
 
 ## License
